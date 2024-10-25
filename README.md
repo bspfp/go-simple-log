@@ -25,3 +25,7 @@ func main() {
 }
 
 ```
+
+```bash
+$ git submodule add https://github.com/bspfp/go-simple-log.git ./pkg/gosimplelog
+```
