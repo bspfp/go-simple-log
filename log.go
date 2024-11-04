@@ -18,7 +18,7 @@ const (
 
 var onceInit sync.Once
 
-func InitLogFile(logDir, logFilename string, maxFiles int) (retval io.Closer, reterr error) {
+func InitLogFile(logDir, logFilename string, maxFiles int) (retval io.WriteCloser, reterr error) {
 	onceInit.Do(func() {
 		l := &logger{
 			dir:      logDir,
